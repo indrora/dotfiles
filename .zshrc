@@ -40,6 +40,7 @@ autoload -U add-zsh-hook
 add-zsh-hook precmd  zz_precmd
 add-zsh-hook preexec zz_preexec
 
+[[ $TERM == "xterm" ]] && export TERM="xterm-256color"
 
 foreach conf in $HOME/.zsh/conf/*.zsh; do
   source $conf
