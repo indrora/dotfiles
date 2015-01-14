@@ -8,12 +8,14 @@ endif
 " >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> NeoBundle configuration
 
 filetype plugin indent on
-call neobundle#rc(expand('~/.vim/bundle/'))
+call neobundle#begin(expand('~/.vim/bundle/'))
 
 NeoBundleFetch 'Shugo/neobundle.vim'
 NeoBundle 'tomasr/molokai'
 NeoBundle 'bling/vim-airline'
 NeoBundleCheck
+
+call neobundle#end()
 
 " >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Common configuration
 
@@ -32,7 +34,7 @@ set background=dark
 
 " >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> GUI+Terminal differences
 if has('gui_running')
-  set guifont=Monofur\ 10
+  set guifont=Envy\ Code\ R\ 10
 endif
 
 colorscheme molokai
