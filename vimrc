@@ -32,9 +32,17 @@ set t_Co=256
 " setup of graphics.
 set background=dark
 
+" two space tab
+" + some indent magic.
+set tabstop=2
+set shiftwidth=2
+set cindent
+set cino=1
+
 " >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> GUI+Terminal differences
 if has('gui_running')
   set guifont=Envy\ Code\ R\ 10
+  set guioptions=matlcpv
 endif
 
 colorscheme molokai
