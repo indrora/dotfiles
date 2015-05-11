@@ -39,9 +39,14 @@ set shiftwidth=2
 set cindent
 set cino=1
 
+
+map <C-Tab> :bnext<cr>
+map <C-S-Tab> :bprevious<cr>
+
+
 " >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> GUI+Terminal differences
 if has('gui_running')
-  set guifont=Envy\ Code\ R\ 10
+  " set guifont=Envy\ Code\ R\ 10
   set guioptions=matlcpv
 endif
 
@@ -50,4 +55,6 @@ colorscheme molokai
 " >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Bundle configurations
 
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
 
+set mouse=a
